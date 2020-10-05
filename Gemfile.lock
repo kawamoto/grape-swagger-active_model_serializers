@@ -80,7 +80,7 @@ GEM
       mustermann (~> 1.0.0)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    rack (2.0.5)
+    rack (2.2.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-test (1.1.0)
