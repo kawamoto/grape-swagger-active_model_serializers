@@ -118,7 +118,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-nulldb-adapter (~> 0.3.7)
-  bundler (~> 1.16)
+  bundler (~> 2.1)
   grape-swagger-active_model_serializers!
   rake (~> 10.0)
   rspec (~> 3.0)
