@@ -1,0 +1,29 @@
+name: rake
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        ruby:
+        # https://hub.docker.com/_/ruby
+        - '2.3'
+        - '2.4'
+        - '2.5'
+        - '2.6'
+        - '2.7'
+        - '3.0-rc'
+        - 'latest'
+    container:
+      image: ruby:${{ matrix.ruby }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and test with Rake
+      run: |
+        gem install bundler -v 2.1.4
+        bundle install --jobs 4 --retry 3
+        bundle exec rake
