@@ -90,7 +90,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
-    rake (10.5.0)
+    rake (13.0.1)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -120,7 +120,7 @@ DEPENDENCIES
   activerecord-nulldb-adapter (~> 0.3.7)
   bundler (~> 2.1)
   grape-swagger-active_model_serializers!
-  rake (~> 10.0)
+  rake (~> 13.0)
   rspec (~> 3.0)
 
 BUNDLED WITH
