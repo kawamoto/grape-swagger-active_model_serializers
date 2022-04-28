@@ -10,7 +10,9 @@ NullDB.configure {|ndb| def ndb.project_root;RAILS_ROOT;end}
 
 # Config some more to suppress after(:all) warnings
 # See https://github.com/nulldb/nulldb/blob/master/lib/nulldb_rspec.rb#L101
-ActiveRecord::Base.configurations.merge!('test' => { 'adapter' => 'nulldb' })
+ActiveRecord::Base.configurations.configurations << ActiveRecord::DatabaseConfigurations::HashConfig.new(
+  'test', 'test', adapter: :nulldb
+)
 
 # Here's where you force NullDB to do your bidding
 # RSpec.configure do |config|

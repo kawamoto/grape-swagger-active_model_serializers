@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   #     "public gem pushes."
   # end
 
-  spec.required_ruby_version = '>= 2.3'
+  spec.required_ruby_version = '>= 2.5'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -32,12 +32,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'active_model_serializers', '>= 0.10.0'
-  spec.add_runtime_dependency 'activerecord', '>= 4.1'
+  spec.add_runtime_dependency 'active_model_serializers', '>= 0.10.12'
+  spec.add_runtime_dependency 'activerecord', '>= 6.1'
   spec.add_runtime_dependency 'grape-swagger', '>= 0.25.2'
 
   spec.add_development_dependency "bundler", "~> 2.1"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency 'activerecord-nulldb-adapter', '~> 0.3.7'
+  spec.add_development_dependency 'activerecord-nulldb-adapter', '~> 0.7.0'
 end
