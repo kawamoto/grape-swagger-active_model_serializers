@@ -21,7 +21,7 @@ jobs:
       image: ruby:${{ matrix.ruby }}
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Build and test with Rake
       run: |
         gem install bundler -v 2.1.4
