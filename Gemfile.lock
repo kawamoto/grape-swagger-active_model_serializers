@@ -4,7 +4,7 @@ PATH
     grape-swagger-active_model_serializers (0.1.1)
       active_model_serializers (>= 0.10.12)
       activerecord (>= 6.1)
-      grape-swagger (>= 0.25.2)
+      grape-swagger (>= 2.0.0)
 
 GEM
   remote: https://rubygems.org/
