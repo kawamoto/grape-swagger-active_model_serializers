@@ -14,6 +14,8 @@ ActiveRecord::Base.configurations.configurations << ActiveRecord::DatabaseConfig
   'test', 'test', adapter: :nulldb
 )
 
+ActiveRecord::Base.establish_connection(adapter: :nulldb)
+
 # Here's where you force NullDB to do your bidding
 # RSpec.configure do |config|
 #   # ...
