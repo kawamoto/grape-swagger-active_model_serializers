@@ -1,35 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ruby
 {
 	"name": "Ruby",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			// Update 'VARIANT' to pick a Ruby version: 2, 2.7, 2.6, 2.5
-			"VARIANT": "3.1",
-			// Options
-			"INSTALL_NODE": "false",
-			"NODE_VERSION": "lts/*"
-		}
-	},
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/ruby:4-3.3-trixie"
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"rebornix.Ruby"
-	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
 
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+	// Configure tool-specific properties.
+	// "customizations": {},
 
-	"runArgs": [
-		"--dns=8.8.8.8"
-	]
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }
