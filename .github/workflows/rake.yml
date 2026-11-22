@@ -19,7 +19,7 @@ jobs:
       image: ruby:${{ matrix.ruby }}
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Build and test with Rake
       run: |
         gem update bundler
