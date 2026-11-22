@@ -123,7 +123,7 @@ GEM
     rails-html-sanitizer (1.7.1)
       loofah (~> 2.25, >= 2.25.2)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
-    rake (13.0.6)
+    rake (13.2.1)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -152,7 +152,7 @@ DEPENDENCIES
   activerecord-nulldb-adapter (~> 1.1.0)
   bundler (~> 2.1)
   grape-swagger-active_model_serializers!
-  rake (~> 13.0)
+  rake (~> 13.2)
   rspec (~> 3.0)
 
 BUNDLED WITH
