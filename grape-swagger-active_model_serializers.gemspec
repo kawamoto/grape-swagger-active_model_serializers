@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'activerecord', '>= 7.2'
   spec.add_runtime_dependency 'grape-swagger', '>= 2.0.0'
 
-  spec.add_development_dependency "bundler", "~> 2.1"
+  spec.add_development_dependency "bundler", "~> 4.1"
   spec.add_development_dependency "rake", "~> 13.2"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency 'activerecord-nulldb-adapter', '~> 1.1.0'
